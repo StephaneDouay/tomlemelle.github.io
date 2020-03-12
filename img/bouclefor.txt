@@ -1,0 +1,6 @@
+Boucle For : Initialisation - > Comparaison - > Incrémentation
+
+$n = dividande 
+$i  = diviseur
+%  = modulo  = trouver un reste grâce à une division
+==0 = le reste est égale à zéro 
