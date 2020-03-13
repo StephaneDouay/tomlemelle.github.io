@@ -13,208 +13,73 @@ body{
 
 /* SLIDER */
 
-* {
-    box-sizing: border-box;
+
+slider {
+ display: block;
+ width: 100%;
+ height: 100%;
+ background-color: #1f1f1f;
+ overflow: hidden;
+ position: absolute;
 }
 
-body,
-button,
-input,
-select,
-optgroup,
-textarea {
-    color: #3d4852;
-    font-size: 1rem;
-    line-height: 1.6;
+slider > * {
+ position: absolute;
+ display: block;
+ width: 100%;
+ height: 100%;
+ background: #1f1f1f;
+ animation: slide 12s infinite;
+ overflow: hidden;
 }
 
-h1 {
-    font-size: 2rem;
-    margin: 2rem auto 1rem;
-    line-height: 1;
+slide:nth-child(1){
+ left: 0%;
+ animation-delay: -1s;
+ background-image: url("img/montagevideojpg");
+ background-size: cover;
+ background-position: center;
 }
 
-h2 {
-    font-size: 1.25rem;
-    margin-top: 0;
+slide:nth-child(2){
+ animation-delay: 2s;
+ background-image: url("developpementweb.jpg");
+ background-size: cover;
+ background-position: center;
 }
 
-a {
-    color: inherit;
-    transition: 0.25s all ease-in-out;
+slide:nth-child(3){
+ animation-delay: 5s;
+ background-image: url(3.jpg);
+ background-size: cover;
+ background-position: center;
 }
 
-a:visited {
-    color: #3d4852;
+slide:nth-child(4){
+ left: 0%;
+ animation-delay: 8s;
+ background-image: url(4.jpg);
+ background-size: cover;
+ background-position: center;
 }
 
-a:hover,
-a:focus,
-a:active {
-    background-color: #3d4852;
-    color: white;
+slide p {
+ font-family: Comfortaa;
+ font-size: 70px;
+ text-align: center;
+ display: inline-block;
+ width: 100%;
+ margin-top: 340px;
+ color: #fff;
 }
 
-a:focus {
-    outline: thin solid #3d4852;
-}
-
-a:hover,
-a:active {
-    outline: 0;
-}
-
-a.button {
-    align-items: center;
-    background-color: #3d4852;
-    border: 1px solid #3d4852;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    display: inline-flex;
-    padding: 0.25rem 0.75rem;
-    text-decoration: none;
-    transition: all 0.25s ease-in-out;
-}
-
-a.button:hover,
-a.button:focus {
-    background-color: #58636F;
-    box-shadow: 0 0 2px 2px #bac6d3;
-}
-
-a.button:focus {
-    outline: 1px solid #3d4852;
-}
-
-a.button:visited {
-    color: #fff;
-}
-
-ul {
-    margin: 0 0 1.5rem;
-    padding: 0;
-}
-
-li {
-    display: inline-block;
-}
-
-svg {
-    fill: currentColor;
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-img {
-    height: auto;
-    margin-bottom: .5rem;
-    max-width: calc(100% + 2rem);
-    position: relative;
-    left: -1rem;
-    right: -1rem;
-}
-
-p {
-    margin: 0 0 .5rem;
-}
-
-main {
-    padding: 1rem 2rem;
-    margin: auto;
-}
-
-header {
-    padding: 1rem 2rem;
-    text-align: center;
-}
-
-.card {
-    border: 1px solid #bac6d3;
-    border-radius: 8px;
-    padding: 1rem;
-}
-
-/********************************
-* Carousel styles
-*********************************/
-.slider_items {
-    display: flex;
-    overflow-x: scroll;
-    padding: 1rem 0;
-    scroll-snap-type: x mandatory;
-}
-
-.slider_item {
-    flex: 1 0 250px;
-    margin-left: 1rem;
-    scroll-snap-align: start;
-}
-
-::-webkit-scrollbar-track {
-    background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar {
-    height: 6px;
-    background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #3d4852;
-    border-radius: 3px;
-}
-
-
-/********************************
-* Breakpoints
-*********************************/
-@media screen and (min-width: 576px) {
-    .slider_item {
-        flex-basis: 300px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-
-    body,
-    button,
-    input,
-    select,
-    optgroup,
-    textarea {
-        font-size: 1.125rem;
-    }
-
-    h1 {
-        font-size: 2.75rem;
-    }
-
-    .slider_item {
-        flex-basis: 325px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    h1 {
-        font-size: 4rem;
-    }
-
-    .slider_item {
-        flex-basis: 450px;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-
-    body,
-    button,
-    input,
-    select,
-    optgroup,
-    textarea {
-        font-size: 1.25rem;
-    }
+@keyframes slide {
+ 0% { left: 100%; width: 100%; }
+ 5% { left: 0%; }
+ 25% { left: 0%; }
+ 30% { left: -100%; width: 100%; }
+ 30.0001% { left: -100%; width: 0%; }
+ 100% { left: 100%; width: 0%; }
 }
 
 /* FIN */
