@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 body{
   font-family: 'Open Sans', sans-serif;
 }
@@ -13,14 +18,30 @@ body{
 
 /* MENU */
 
+.header{
+}
+
+.nav{
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav > a{
   color: black;
   text-decoration: none;
-  trasnform: transition 1s;
+  font-weight: 600;
+  padding: 0 12px;
+  font-size: 13.2px;
+}
+
+.liens_top{
+  transform: transition 1s;
 }
 
 .liens_top:hover{
-
+    transform: scale(1.2);
 }
 
 /* FIN */
@@ -109,6 +130,8 @@ body{
   }
 }
 
+/* slider media queries */
+
 @media (max-width; 768px){
   .container .slider .slide .caption{
     position: absolute;
@@ -130,4 +153,37 @@ body{
     transition: 0.5s;
   }
 
-/* FIN /*
+  /* fin media queries */
+
+/* FIN */
+
+/* biographie */
+
+.biographie{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 10% 1fr;
+  grid-template-areas:
+  "image titre"
+  "image texte";
+}
+
+.photo{
+  grid-area: image;
+  align-items: center;
+  justify-self: center;
+}
+
+.bio{
+  grid-area: titre;
+  align-items: center;
+  justify-self: center;
+}
+
+.texte_biographie{
+  grid-area: texte;
+  align-items: center;
+  justify-self: center;
+}
+
+/* fin */
