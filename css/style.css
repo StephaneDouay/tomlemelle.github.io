@@ -328,6 +328,33 @@ body{
 
 /* fin */
 
+/* section passions */
+
+.section__passions:first-child{
+  background-image: url("../img/developpeur.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section__passions:nth-child(2){
+  background-image: url("../img/developpeur.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section__passions:nth-child(3){
+  background-image: url("../img/developpeur.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section__passions:last-child{
+  background-image: url("../img/developpeur.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* fin */
 
 /* media quesries metiers */
 
@@ -580,21 +607,145 @@ body{
   margin-bottom: 35px;
 }
 
+/* milestone */
+
+.milestone {
+  list-style: none;
+  margin: 10px 35px;
+}
+.milestone__item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-gap: 1em;
+
+  margin-bottom: 4em;
+}
+
+.milestone__icon {
+  position: relative;
+
+}
+
+.milestone__item:not(:last-child) .milestone__icon:after {
+  content: "";
+
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: block;
+  width: 1px;
+  height: 100%;
+
+  border-left: 1px dashed #999;
+}
+
+
+.milestone__icon i,
+.milestone__icon img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+}
+
+.milestone__icon img {
+  max-width: 100%;
+}
+
+
+.milstone__content h2{
+  margin-left: -2px;
+}
+
+
+
 /* fin */
 
-@media (min-width: 1200){
+/* fin */
+
+@media (max-width: 960px){
+  .milestone__icon h2{
+    display: none;
+  }
+}
+
+@media (min-width: 960px){
+
+  .milstone__icon h2{
+    display: none;
+  }
+
+  .milstone__content h2{
+    display: none;
+  }
+
+  .milestone__icon h2{
+    position: absolute;
+    top: 30px;
+    left: -90px;
+  }
+
+  .milestone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 250px;
+  }
+
+
+  .milestone__item {
+
+    margin-bottom: 4em;
+}
+
+  .milestone__th:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: inherit;
+    margin-top: -2px;
+  }
+
+  .milestone__th{
+    display: block;
+    zoom: 1;
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    right: 100px;
+    top: 50px;
+    background-color: #999;
+  }
+
+  .milestone_icon img{
+  }
+
+
+}
+
+@media (min-width: 1200px){
   .sectionpresentation{
     margin-left: 45px;
   }
 }
 
-@media (min-width: 1600){
+@media (min-width: 1600px){
   .sectionpresentation{
     margin-left: 95px;
   }
 }
 
-@media (min-width: 1639){
+@media (min-width: 1639px){
   .sectionpresentation{
     margin-left: 95px;
   }
