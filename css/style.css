@@ -330,29 +330,6 @@ body{
 
 /* section passions */
 
-.section__passions:first-child{
-  background-image: url("../img/developpeur.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.section__passions:nth-child(2){
-  background-image: url("../img/developpeur.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.section__passions:nth-child(3){
-  background-image: url("../img/developpeur.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.section__passions:last-child{
-  background-image: url("../img/developpeur.jpg");
-  background-size: cover;
-  background-position: center;
-}
 
 /* fin */
 
@@ -663,7 +640,58 @@ body{
   margin-left: -2px;
 }
 
+/* sections passions */
 
+.section__passions{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 35px;
+}
+
+.passions__articles{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 25vh;
+  background-image: url("../img/developpeur.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.passions__caption{
+  position: absolute;
+  bottom: -15px;
+  padding: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1);
+  transition: all ease 500ms;
+}
+
+.titre__passions{
+  font-weight: bold;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+  margin-top: -15px;
+  text-transform: uppercase;
+}
+
+.passions__articles:hover .passions__caption{
+  transform: scale(0);
+}
+
+.passions__articles:hover{
+  filter: saturate(150%);
+}
+
+/* fin */
 
 /* fin */
 
@@ -701,7 +729,6 @@ body{
 
 
   .milestone__item {
-
     margin-bottom: 4em;
 }
 
@@ -725,9 +752,6 @@ body{
     right: 100px;
     top: 50px;
     background-color: #999;
-  }
-
-  .milestone_icon img{
   }
 
 
