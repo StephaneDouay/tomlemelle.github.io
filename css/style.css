@@ -640,6 +640,9 @@ body{
   margin-left: -2px;
 }
 
+/* fin */
+
+
 /* sections passions */
 
 .section__passions{
@@ -650,15 +653,41 @@ body{
   margin: 10px 35px;
 }
 
+#passions_articlesa{
+  background-image: url("../img/developpeur.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#passions_articlesb{
+  background-image: url("../img/productionaudiovisuelle.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#passions_articlesc{
+  background-image: url("../img/streetworkout.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#passions_articlesd{
+  background-image: url("../img/gaming.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .passions__articles{
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 25vh;
-  background-image: url("../img/developpeur.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin-bottom: 15px;
+  filter: grayscale(50%);
 }
 
 .passions__caption{
@@ -688,12 +717,49 @@ body{
 }
 
 .passions__articles:hover{
-  filter: saturate(150%);
+  filter: grayscale(0%);
 }
 
-/* fin */
 
 /* fin */
+
+/* section youtube video */
+
+.section__youtube{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 35px;
+}
+
+.youtube{
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+  transition: filter 1s;
+  filter: grayscale(50%);
+  margin-bottom: 15px;
+}
+
+.youtube iframe{
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.youtube h3{
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #159DA4;
+
+}
 
 /* fin */
 
