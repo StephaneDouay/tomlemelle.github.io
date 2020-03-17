@@ -156,9 +156,12 @@ body{
 
   /* fin media queries */
 
-/* FIN */
 
 /* titre sous titre section */
+
+.photo{
+  margin: 0 35px;
+}
 
 .tom{
   width: 100%;
@@ -272,9 +275,9 @@ body{
 }
 
 .separator{
-  width: 85%;
+  width: 100%;
   color: #98A9AA;
-  margin: 35px 0px;
+  margin: 35px 35px;
 }
 
 .metiers_dev{
@@ -319,21 +322,19 @@ body{
 /* section compétences */
 
 .separator_comp{
-  width: 80%;
+  width: 100%;
   color: #98A9AA;
   margin-top: -20px;
   margin-bottom: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 
 /* fin */
 
-/* section passions */
 
-
-/* fin */
-
-/* media quesries metiers */
+/* media queries */
 
 @media (min-width: 1050px){
   /* biographie */
@@ -447,6 +448,10 @@ body{
     margin-top: 12px;
   }
 
+/* fin */
+
+/* separator metiers */
+
   .hr{
     display: flex;
     justify-content: center;
@@ -457,6 +462,10 @@ body{
     width: 80%;
     color: #98A9AA;
   }
+
+/* fin */
+
+/* section metiers */
 
   .metiers_dev{
     width: 100%;
@@ -507,6 +516,8 @@ body{
   }
 
 }
+
+/* fin */
 
 /* setion competences */
 
@@ -583,6 +594,8 @@ body{
 .info_formation{
   margin-bottom: 35px;
 }
+
+/* fin */
 
 /* milestone */
 
@@ -758,10 +771,136 @@ body{
   text-transform: uppercase;
   font-size: 25px;
   color: #159DA4;
-
 }
 
 /* fin */
+
+/* section contact */
+
+.section__contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px 35px;
+}
+
+.contact__label{
+  font-size: 13px;
+  color: #159DA4;
+  margin-top: 14px;
+  margin-bottom: 7px;
+  display: block;
+}
+
+.form{
+  width: 100%;
+}
+
+input{
+  width: 100%;
+  height: 44px;
+  background: #fff;
+  border: 1px solid #159DA4;
+  color: #000;
+}
+
+input[type="submit"]{
+  border: none;
+  color: white;
+  transition: all ease 500ms;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover{
+  background: #98A9AA;
+  margin-left: 15px;
+  transform: scale(1.2);
+  font-size: 20px;
+  border: none;
+
+}
+
+textarea{
+  width: 100%;
+  margin-bottom: 11px;
+}
+
+
+.submit{
+  background: #159DA4;
+  width: 142px;
+  height: 48px;
+  color: #fff;
+}
+
+/* fin */
+
+/* sticky footer */
+
+.main{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content{
+  flex: 1;
+}
+
+/* fin */
+
+/* section footer */
+
+.footer{
+  background: #484848;
+  width: 100%;
+  height: 64px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 27px 27px;
+  grid-template-areas:
+  "liens"
+  "rc";
+  padding: 0px 35px;
+}
+
+.footer__list{
+  color: white;
+  font-size: 11px;
+  grid-area: liens;
+  justify-self: start;
+  align-self: center;
+}
+
+.footer__list a{
+  text-decoration: none;
+  color: #98A9AA;
+}
+
+.icon__reseauxsociaux{
+  grid-area: rc;
+  align-self: center;
+  justify-self: center;
+  margin-right: 60px;
+}
+
+.icon__reseauxsociaux a{
+  color: #98A9AA;
+  padding: 0px 5px;
+}
+
+.icon__reseauxsociaux a:first-child:hover{
+  color: red;
+}
+
+.icon__reseauxsociaux a:last-child:hover{
+  color: #159DA4;
+}
+
+/* fin */
+
+/* media queries */
 
 @media (max-width: 960px){
   .milestone__icon h2{
@@ -820,6 +959,17 @@ body{
     background-color: #999;
   }
 
+  .footer{
+    height: 54px;
+    grid-template-columns: 60% 23%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "liens rc";
+  }
+
+  .icon__reseauxsociaux{
+    grid-area: rc;
+  }
 
 }
 

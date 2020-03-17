@@ -63,6 +63,8 @@
         <p class="description">Vidéo / Biographie / Développement web</p>
       </section>
 
+      <div class="hr"><hr class="separator_comp"></div>
+
       <section class="biographie">
         <div class="photo">
           <img src="img/moi.jpg" alt="photo de tom lemelle" class="tom">
@@ -298,7 +300,53 @@
     </div>
   </section>
 
-  </div>
+  <section class="section">
+    <h3 class="section_titre">Contact</h3>
+    <p class="description">Convaincu ?</p>
+  </section>
+
+  <div class="hr"><hr class="separator_comp"></div>
+
+  <section class="section__contact">
+    <form class="form" action="index.html" method="post">
+      <div class="div__contact">
+        <label for="n" class="contact__label">Nom *</label>
+        <input type="text" id="n" name="n">
+      </div>
+      <div class="div__contact">
+        <label for="m" class="contact__label">Adresse mail *</label>
+        <input type="email" id="m" name="m">
+      </div>
+      <div class="div__contact">
+        <label for="s" class="contact__label">Sujet *</label>
+        <input type="text" id="s" name="s">
+      </div>
+      <div class="div__contact">
+        <label for="m" class="contact__label">Message *</label>
+        <textarea id="m" name="t" rows="7" cols="40"></textarea>
+      </div>
+
+      <div class="button">
+        <input type="submit" class="submit" nam="submit" value="Valider">
+      </div>
+    </form>
+  </section>
+</div>
+
+  <footer class="footer">
+      <div class="footer__list">
+        Tom Lemelle
+        <a href="https://normandiewebschool.fr">&copy; Normandie Web School</a>
+        <a href="tomlem.github.io/admin.php">| Admin</a>
+        <a href="credits.html">| Crédits</a>
+      </div>
+
+    <div class="icon__reseauxsociaux">
+      <a href="https://www.youtube.com/channel/UCOacMpLJMQruPb5CT6ME7fQ?view_as=subscriber"><i class="fa fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/tom-lemelle/?originalSubdomain=fr"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </footer>
+
 </div>
 
 <script src="js/js.js" charset="utf-8"></script>
