@@ -519,6 +519,34 @@ body{
   height: 100%;
 }
 
+.texte_slider{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 35px;
+}
+
+.groupe{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.span_comp{
+  margin-left: 5px;
+  font-size: 25px;
+  color: #159DA4;
+}
+
+.texte_competence{
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-top: 5px;
+  color: #98A9AA;
+  font-size: 18px;
+}
+
 
 /* fin */
 
