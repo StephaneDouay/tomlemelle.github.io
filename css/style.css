@@ -854,7 +854,7 @@ textarea{
 
 .footer{
   background: #484848;
-  width: 100%;
+  width: 95%;
   height: 64px;
   display: grid;
   grid-template-columns: 1fr;
@@ -862,7 +862,8 @@ textarea{
   grid-template-areas:
   "liens"
   "rc";
-  padding: 0px 35px;
+  padding: 0px;
+  padding-left: 5%;
 }
 
 .footer__list{
@@ -909,6 +910,90 @@ textarea{
 }
 
 @media (min-width: 960px){
+
+  .competences{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "gauche droite";
+  }
+
+  .slider2{
+    grid-area: gauche;
+  }
+
+  .texte_slider{
+    grid-area: droite;
+  }
+
+  #a{
+    align-self: start;
+  }
+
+  #b{
+    align-self: center;
+    margin-bottom: 90px;
+  }
+
+  #c{
+    margin-top: 90px;
+    align-self: center;
+  }
+
+  #d{
+    align-self: end;
+    margin-top: 50px;
+  }
+
+  .all__nws{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "imgnws"
+    "infonws";
+  }
+
+  .all__nws .img_formation{
+    grid-area: imgnws;
+  }
+
+  .all__nws .info_formation{
+    grid-area: infonws;
+  }
+
+  .all__chataigneraie{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "imgchat"
+    "infochat";
+  }
+
+.all__chataigneraie .img_formation{
+    grid-area: imgchat;
+}
+
+.all__chataigneraie .info_formation{
+    grid-area: infochat;
+}
+
+.formations{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "normandiews lachat";
+  grid-column-gap: 25px;
+}
+
+.all__nws{
+  grid-area: normandiews;
+}
+
+.all__chataigneraie{
+  grid-area: lachat;
+}
 
   .milstone__icon h2{
     display: none;
@@ -989,7 +1074,44 @@ textarea{
   .sectionpresentation{
     margin-left: 95px;
   }
+
+  #b{
+    margin-bottom: 170px;
+  }
+
+  #c{
+    margin-top: 170px;
+  }
 }
+
+@media (min-width: 1638px){
+  .sectionpresentation{
+    margin-left: 95px;
+  }
+
+  #b{
+    margin-bottom: 170px;
+  }
+
+  #c{
+    margin-top: 170px;
+  }
+}
+
+@media (min-width: 1445px){
+  .sectionpresentation{
+    margin-left: 95px;
+  }
+
+  #b{
+    margin-bottom: 160px;
+  }
+
+  #c{
+    margin-top: 160px;
+  }
+}
+
 
 
 
