@@ -160,7 +160,7 @@ body{
 /* titre sous titre section */
 
 .photo{
-  margin: 0 35px;
+  margin: 0 9.5%;
 }
 
 .tom{
@@ -168,7 +168,8 @@ body{
 }
 
 .section{
-  margin-left: 40px;
+  margin-left: 9.5%;
+  margin-right: 9.5%;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -277,7 +278,7 @@ body{
 .separator{
   width: 100%;
   color: #98A9AA;
-  margin: 35px 35px;
+  margin: 9.5% 9.5%;
 }
 
 .metiers_dev{
@@ -326,8 +327,8 @@ body{
   color: #98A9AA;
   margin-top: -20px;
   margin-bottom: 20px;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 9.5%;
+  margin-right: 9.5%;
 }
 
 
@@ -423,6 +424,10 @@ body{
     justify-content: center;
   }
 
+  .camera{
+    width: 80%;
+  }
+
   .texte_video{
     grid-area: textevideo;
     justify-self: center;
@@ -432,10 +437,9 @@ body{
 
   .tv{
     font-size: 20px;
-    padding-right: 60px;
   }
 
-  .titre_video{
+  .titre__video{
     margin-bottom: 12px;
     color: #159da4;
     font-size: 25px;
@@ -444,7 +448,7 @@ body{
   }
 
   .camera{
-    width: 50%;
+    width: 80%;
     margin-top: 12px;
   }
 
@@ -458,7 +462,7 @@ body{
     align-items: center;
   }
 
-  .separator_metiers{
+  .separator__metiers{
     width: 80%;
     color: #98A9AA;
   }
@@ -471,9 +475,8 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
-    "textedev dev"
     "textedev dev";
     padding-top: 70px;
     padding-bottom: 70px;
@@ -490,7 +493,7 @@ body{
     justify-content: center;
   }
 
-  .titre_dev{
+  .titre__dev{
     margin-bottom: 12px;
     color: #159da4;
     font-size: 25px;
@@ -498,7 +501,7 @@ body{
     font-weight: normal;
   }
 
-  .texte_dev{
+  .texte__dev{
     grid-area: textedev;
     justify-self: center;
     align-self: center;
@@ -507,11 +510,10 @@ body{
 
   .td{
     font-size: 20px;
-    padding-left: 60px;
   }
 
   .code{
-    width: 50%;
+    width: 80%;
     margin-top: 12px;
   }
 
@@ -521,12 +523,9 @@ body{
 
 /* setion competences */
 
-.competences{
-
-}
 
 .slider2{
-  padding: 35px;
+  padding: 9.5%;
 }
 
 .slide_auto{
@@ -539,7 +538,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 35px;
+  padding: 0 9.5%;
 }
 
 .groupe{
@@ -567,7 +566,7 @@ body{
 /* formation */
 
 .formations{
-  margin: 0 35px;
+  margin: 0 9.5%;
   margin-top: 20px;
 }
 
@@ -592,7 +591,7 @@ body{
 }
 
 .info_formation{
-  margin-bottom: 35px;
+  margin-bottom: 9.5%;
 }
 
 /* fin */
@@ -601,7 +600,7 @@ body{
 
 .milestone {
   list-style: none;
-  margin: 10px 35px;
+  margin: 10px 9.5%;
 }
 .milestone__item {
   display: grid;
@@ -663,7 +662,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px 35px;
+  margin: 10px 9.5%;
 }
 
 #passions_articlesa{
@@ -738,33 +737,45 @@ body{
 
 /* section youtube video */
 
-.section__youtube{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 35px;
-}
-
 .youtube{
-  position: relative;
-  width: 100%;
-  height: 25vh;
-  overflow: hidden;
-  transition: filter 1s;
-  filter: grayscale(50%);
-  margin-bottom: 15px;
+   position: relative;
+   padding-bottom: 56.25%;
+   padding-top: 30px;
+   height: 0;
+   overflow: hidden;
+   margin: 10px 9.5%;
 }
 
-.youtube iframe{
-  position: absolute;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.8);
+.youtube > iframe,
+.youtube > object,
+.youtube > embed {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   filter: grayscale(50%);
 }
 
-.youtube h3{
-  height: 100%;
+.youtube > iframe:hover,
+.youtube > object:hover,
+.youtube > embed:hover {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   filter: grayscale(0%);
+}
+
+
+.section__youtube > div{
+   width: 100%;
+   height: 100%;
+
+}
+
+.youtube__titre{
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -782,7 +793,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 10px 35px;
+  margin: 10px 9.5%;
 }
 
 .contact__label{
@@ -910,6 +921,11 @@ textarea{
 }
 
 @media (min-width: 960px){
+
+  .separator_comp{
+    margin-left: 9.5%;
+    margin-right: 9.5%;
+  }
 
   .competences{
     display: grid;
@@ -1044,23 +1060,134 @@ textarea{
     background-color: #999;
   }
 
+
+  .section__passions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "dev prod"
+    "sw gaming";
+    grid-column-gap: 25px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #passions_articlea{
+    grid-area: dev;
+  }
+
+  #passions_articleb{
+    grid-area: prod;
+  }
+
+  #passions_articlec{
+    grid-area: sw;
+  }
+
+  #passions_articled{
+    grid-area: gaming;
+  }
+
   .footer{
     height: 54px;
-    grid-template-columns: 60% 23%;
+    grid-template-columns: 60% 29.5%;
     grid-template-rows: 1fr;
     grid-template-areas:
     "liens rc";
   }
 
-  .icon__reseauxsociaux{
-    grid-area: rc;
-  }
 
+  @media (min-width: 1000px){
+    .section__youtube{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+      "a b"
+      "c d";
+      grid-column-gap: 25px;
+      grid-row-gap: 25px;
+    }
+
+    .item__youtube1{
+      grid-area: a;
+    }
+
+    .item__youtube2{
+      grid-area: b;
+    }
+
+    .item__youtube3{
+      grid-area: c;
+    }
+
+    .item__youtube4{
+      grid-area: d;
+    }
 }
 
 @media (min-width: 1200px){
   .sectionpresentation{
     margin-left: 45px;
+  }
+}
+
+@media (min-width: 1400px){
+    .photo, .metiers, .formations, .section__passions,
+     .section__contact, .separator__comp{
+      margin-left: 227px;
+      margin-right: 227px;
+    }
+
+    .photo{
+      width: 60%;
+      padding-left: 227px;
+    }
+
+    .part2{
+      padding-right: 227px;
+    }
+
+    .competences{
+      margin-left:175px;
+      margin-right: 175px;
+    }
+
+    .section__youtube{
+      margin-left: 180px;
+      margin-right: 180px;
+    }
+
+    .milestone{
+      margin-left: 310px;
+      margin-right: 310px;
+    }
+}
+
+@media (min-width: 1500px){
+  .section__passions{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "dev prod sw gaming";
+}
+
+  #passions_articlea{
+    grid-area: dev;
+  }
+
+  #passions_articleb{
+    grid-area: prod;
+  }
+
+  #passions_articlec{
+    grid-area: sw;
+  }
+
+  #passions_articled{
+    grid-area: gaming;
   }
 }
 
