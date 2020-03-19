@@ -229,6 +229,7 @@ body{
   color: white;
   font-size: 16px;
   text-decoration: none;
+  transition: all ease 500ms;
 
 }
 
@@ -237,6 +238,7 @@ body{
   margin-left: 15px;
   font-size: 20px;
   border: none;
+  transform: scale(1.2);
 
 }
 
