@@ -521,6 +521,7 @@ body{
 
 /* fin */
 
+
 /* setion competences */
 
 
@@ -612,7 +613,6 @@ body{
 
 .milestone__icon {
   position: relative;
-
 }
 
 .milestone__item:not(:last-child) .milestone__icon:after {
@@ -651,6 +651,24 @@ body{
 .milstone__content h2{
   margin-left: -2px;
 }
+
+.milestone__h2__adl{
+  margin-left: -142px;
+}
+
+.milestone__h2__linfo{
+  margin-left: -198px;
+}
+
+.milestone__h2__andchor{
+  margin-left: -213px;
+}
+
+.milestone__h2__dentanor{
+  margin-left: -133px;
+}
+
+
 
 /* fin */
 
@@ -1030,7 +1048,9 @@ textarea{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10px 250px;
+    margin: 10px 0;
+    margin-left: 350px;
+    margin-right: 60px;
   }
 
 
@@ -1131,6 +1151,13 @@ textarea{
 @media (min-width: 1200px){
   .sectionpresentation{
     margin-left: 45px;
+  }
+}
+
+@media (min-width: 1300px){
+  .milestone__item{
+    margin-left: 227px;
+    margin-right: 227px;
   }
 }
 
