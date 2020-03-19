@@ -182,10 +182,62 @@ body{
   line-height: 1.4;
 }
 
-.description{
+.description, .titre__credits, .titre_RGPD{
   color: #159da4;
   font-weight: normal;
   font-size: 16px;
+}
+
+.div__credits, .div__RGPD{
+  margin-left: 9.5%;
+  margin-right: 9.5%;
+}
+
+@media (min-width: 1400px){
+  .div__credits, .div__RGPD, .credits__button, .section,{
+    margin-left: 227px;
+    margin-right: 227px;
+  }
+}
+
+.titre_RGPD{
+  font-size: 25px;
+  color: black;
+}
+
+.texte__rgpd{
+  color: #159DA4;
+}
+
+
+.texte__rgpd strong{}
+  color: #159DA4;
+}
+
+
+.credits__button{
+  margin-top: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  border: none;
+  background-color: #159DA4;
+  padding: 7px 10px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+
+}
+
+.btn:hover{
+  background: #98A9AA;
+  margin-left: 15px;
+  font-size: 20px;
+  border: none;
+
 }
 
 /* fin */
@@ -847,7 +899,6 @@ input[type="submit"]:hover{
   transform: scale(1.2);
   font-size: 20px;
   border: none;
-
 }
 
 textarea{
