@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr_FR" dir="ltr">
   <head>
+    <!-- balise meta -->
     <meta charset="utf-8">
     <title>Tom Lemelle</title>
     <meta charset="UTF-8">
@@ -21,18 +22,26 @@
     <meta name="twitter:title" content="Tom Lemelle | Vidéaste et développeur web - tomlem" />
     <meta name="twitter:image" content="http://tomlem.normandiedigitalschool.fr/wp-content/uploads/2020/02/moi.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fin de balise méta -->
+    <!-- balise link -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- fin de balise link -->
   </head>
 
 <body>
+  <!-- main contient tout le contenu du site -->
  <main class="main">
+   <!-- content contient tout le contenu du site à part le footer (pour coller le footer au pied de page avec flex) -->
    <div class="content">
+     <!-- header contient le menu du site-->
       <header class="header">
         <span class="logo_box">
+          <!-- logo non disponibl, en display: none; dans le css -->
           <img src="logo.png" alt="Photo de profil tom lemelle" class="logo">
         </span>
+        <!-- menu du site -->
         <nav class="nav">
           <a href="#" class="liens_top">Vidéo</a>
           <a href="#" class="liens_top">Formation</a>
@@ -41,7 +50,9 @@
         </nav>
       </header>
 
+      <!-- slider monteur vidéo & developpeur web -->
       <section class="container">
+        <!-- slider monteur video -->
         <div class="slider">
           <div class="slide slide1">
             <div class="caption">
@@ -49,6 +60,7 @@
               <p class="monteur">Monteur vidéo</p>
             </div>
           </div>
+          <!-- slider développeur web -->
           <div class="slide slide2">
             <div class="caption">
               <h2 class="tom">Tom Lemelle</h2>
@@ -58,13 +70,16 @@
         </div>
       </section>
 
+      <!-- section qui affiche le titre et le sous titre (réccurent) -->
       <section class="section">
         <h1 class="section_titre">Présentation</h1>
         <p class="description">Vidéo / Biographie / Développement web</p>
       </section>
 
+      <!-- hr qui sépart la section titre du contenu (récurrent) -->
       <div class="hr"><hr class="separator_comp"></div>
 
+      <!-- section biographie -->
       <section class="biographie">
         <div class="photo">
           <img src="img/moi.jpg" alt="Tom Lemelle | Vidéaste et développeur web" class="tom">
@@ -76,7 +91,9 @@
         </div>
       </section>
 
+      <!-- section métiers que j'aime -->
       <section class="metiers">
+        <!-- description monteur -->
         <div class="metiers_video">
           <div class="video">
             <h3 class="titre_video">Vidéo</h3>
@@ -90,6 +107,7 @@
 
           <div class="hr"><hr class="separator_metiers"></div>
 
+          <!-- description développeur web -->
           <div class="metiers_dev">
             <div class="developpementweb">
               <h3 class="titre_dev">Développement web</h3>
@@ -104,17 +122,24 @@
           </div>
       </section>
 
+      <!-- section qui affiche le titre et le sous titre (réccurent) -->
       <section class="section">
         <h3 class="section_titre">Compétences</h3>
         <p class="description">Logiciel</p>
       </section>
 
+      <!-- hr qui sépart la section titre du contenu (récurrent) -->
       <div class="hr"><hr class="separator_comp"></div>
 
+      <!-- section compétences acquises -->
       <section class="competences">
+        <!-- slider images audiovisuelle / développeur / design & retouche -->
         <div class="slider2">
           <img src="img/ppae.png" name="slide" class="slide_auto" alt="image de compétences slider logiciel adobe première pro after effects logiciel de montage vidéo, atom vscode logiciel éditeur de code, photoshop et lightroom logiciel de retouche photo et design">
         </div>
+        <!-- fin slider -->
+        <!-- texte à gauche -->
+        <!-- première pro -->
         <div class="texte_slider" id="a">
           <div class="groupe">
             <i class="fa fa-camera"></i>
@@ -122,6 +147,8 @@
           </div>
           <p class="texte_competence">Logiciel de montage vidéo / étalonnage (post production). </p>
           </div>
+          <!-- fin première pro -->
+          <!-- after effects -->
           <div class="texte_slider" id="b">
             <div class="groupe">
               <i class="fa fa-camera"></i>
@@ -129,6 +156,8 @@
             </div>
             <p class="texte_competence">Logiciel d'éditing, effets visuels (post-production). </p>
           </div>
+          <!-- fin after effects -->
+          <!-- photoshop & lightroom -->
           <div class="texte_slider" id="c">
             <div class="groupe">
               <i class="fa fa-photo"></i>
@@ -136,6 +165,8 @@
             </div>
             <p class="texte_competence">Logiciel de retouche photo / design / montage photo. </p>
           </div>
+          <!-- fin photoshop & lightroom -->
+          <!-- développement web html / css -->
           <div class="texte_slider" id="d">
             <div class="groupe">
               <i class="fa fa-desktop"></i>
@@ -143,16 +174,21 @@
             </div>
             <p class="texte_competence">Langage de programmation web, utilisé pour la structuration et le design d'un site. </p>
           </div>
+          <!-- fin développement web html / css -->
       </section>
 
+      <!-- section qui affiche le titre et le sous titre (réccurent) -->
       <section class="section">
         <h3 class="section_titre">Formations</h3>
         <p class="description">Écoles</p>
       </section>
 
+      <!-- hr qui sépart la section titre du contenu (récurrent) -->
       <div class="hr"><hr class="separator_comp"></div>
 
+      <!-- section formations -->
       <section class="formations">
+        <!-- bachelor école nws -->
         <div class="all__nws">
           <div class="img_formation">
             <img src="img/nws.jpg" alt="photo de l'école Normandie Web School" class="img_formation">
@@ -163,6 +199,8 @@
             <p class="texte_formation">En cours de formatino à la Normandie Web School pour 3 ans.</p>
           </div>
         </div>
+        <!-- fin bachelor école nws -->
+        <!-- bac lycée la châtaigneraie -->
         <div class="all__chataigneraie">
           <div class="img_formation">
             <img src="img/lachataigneraie.jpg" alt="photo du lycée La Châtaigneraie" class="img_formation">
@@ -173,18 +211,23 @@
             <p class="texte_formation">De 2014 à 2018, j‘ai obtenu mon diplôme national du brevet, ainsi que mon brevet d’études professionnelles et pour finir mon baccalauréat professionnel système électronique numérique spécialisation alarme incendie</p>
           </div>
         </div>
+        <!-- fin bac lycée la châtaigneraie -->
       </section>
 
+      <!-- section qui affiche le titre et le sous titre (réccurent) -->
       <section class="section">
         <h3 class="section_titre">Expériences</h3>
         <p class="description">Stages</p>
       </section>
 
+      <!-- hr qui sépart la section titre du contenu (récurrent) -->
       <div class="hr"><hr class="separator_comp"></div>
 
-
+      <!-- section expériences -->
+      <!-- liste ul représetant une chronologie de mes stages -->
       <ul class="milestone">
 
+        <!-- ADL SERVICES -->
         <li class="milestone__item">
           <div class="milestone__icon">
             <span class="milestone__th"></span>
@@ -200,7 +243,9 @@
             </div>
           </div>
         </li>
+        <!-- fin ADL SERVICES -->
 
+    <!-- L'informatique -->
     <li class="milestone__item">
       <div class="milestone__icon">
         <span class="milestone__th"></span>
@@ -216,7 +261,9 @@
         </div>
       </div>
     </li>
+    <!-- fin L'informatique -->
 
+    <!-- Andchor -->
     <li class="milestone__item">
       <div class="milestone__icon">
         <h2 class="milestone__h2__andchor">DE JUIN À JUILLET 2016</h2>
@@ -230,7 +277,9 @@
         <p>Stagiaire polyvalent à l’entreprise Andchor. <br>Agence de communication, développement web, de stratégie marketing, de communication, et d’audiovisuel.</p>
       </div>
     </li>
+    <!-- fin Andchor -->
 
+    <!-- Dentanor -->
     <li class="milestone__item">
       <div class="milestone__icon">
         <h2 class="milestone__h2__dentanor">DÉCEMBRE 2015</h2>
@@ -244,46 +293,65 @@
         <p>Stagiaire polyvalent à l’entreprise Dentanor. <br>Pose de matériels dentaires, revendeur de fournitures dentaires, dépannage de matériels dentaire ( fauteuil pour un patient, un bras-radio, un autoclave, un progiciel ( logiciel pour les professionnel sur ordinateur )).</p>
       </div>
     </li>
+    <!-- fin Dentanor -->
+
   </ul>
 
+  <!-- section qui affiche le titre et le sous titre (réccurent) -->
   <section class="section">
     <h3 class="section_titre">Mes passions</h3>
     <p class="description">Développeur web / Montage vidéo / Street Workout / Gaming</p>
   </section>
 
+  <!-- hr qui sépart la section titre du contenu (récurrent) -->
   <div class="hr"><hr class="separator_comp"></div>
 
+  <!-- section mes passions -->
   <section class="section__passions">
+
+    <!--  Développement web -->
     <div class="passions__articles" id="passions_articlesa">
       <div class="passions__caption">
         <h3 class="titre__passions">Développement web</h3>
       </div>
     </div>
+    <!--  fin Développement web -->
+    <!-- Production audiovisuelle -->
     <div class="passions__articles" id="passions_articlesb">
       <div class="passions__caption">
         <h3 class="titre__passions">Production audiovisuelle</h3>
       </div>
     </div>
+    <!-- fin Production audiovisuelle -->
+    <!-- Street workout -->
     <div class="passions__articles" id="passions_articlesc">
       <div class="passions__caption">
         <h3 class="titre__passions">StreetWorkout</h3>
       </div>
     </div>
+    <!-- fin Street workout -->
+    <!-- Gaming -->
     <div class="passions__articles" id="passions_articlesd">
       <div class="passions__caption">
         <h3 class="titre__passions">Gaming</h3>
       </div>
     </div>
+    <!-- fin Gaming -->
   </section>
 
+  <!-- section qui affiche le titre et le sous titre (réccurent) -->
   <section class="section">
     <h3 class="section_titre">Mes vidéos</h3>
     <p class="description">Première Pro</p>
   </section>
 
+  <!-- hr qui sépart la section titre du contenu (récurrent) -->
   <div class="hr"><hr class="separator_comp"></div>
 
+  <!-- section mes vidéos youtube -->
   <section class="section__youtube">
+
+    <!-- Tuto -->
     <div class="item__youtube1">
       <div class="youtube" id="youtubea">
         <iframe src="https://www.youtube.com/embed/ZNphwfxbs0w" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -292,6 +360,9 @@
         <h3 class="youtube__titre">Tuto Première Pro</h3>
       </div>
     </div>
+    <!-- fin Tuto -->
+
+    <!-- story paranormal -->
     <div class="item__youtube_2">
       <div class="youtube" id="youtubeb">
         <iframe src="https://www.youtube.com/embed/EJRnTIVkJSs" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -300,6 +371,9 @@
         <h3 class="youtube__titre">Story Paranormal</h3>
       </div>
     </div>
+    <!-- story paranormal -->
+
+    <!-- Editing intro -->
     <div class="item__youtube_3">
       <div class="youtube" id="youtubec">
         <iframe src="https://www.youtube.com/embed/E0VRXJQKjIw" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -308,6 +382,9 @@
         <h3 class="youtube__titre">Editing intro</h3>
       </div>
     </div>
+    <!-- fin Editing intro -->
+
+    <!-- Editing gaming -->
     <div class="item__youtube_4">
       <div class="youtube" id="youtubed">
         <iframe src="https://www.youtube.com/embed/TTuII_7N7tw" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -316,15 +393,20 @@
         <h3 class="youtube__titre">Editing gaming</h3>
       </div>
     </div>
+    <!-- fin Editing gaming -->
+
   </section>
 
+  <!-- section qui affiche le titre et le sous titre (réccurent) -->
   <section class="section">
     <h3 class="section_titre">Contact</h3>
     <p class="description">Convaincu ?</p>
   </section>
 
+  <!-- hr qui sépart la section titre du contenu (récurrent) -->
   <div class="hr"><hr class="separator_comp"></div>
 
+  <!-- section contact -->
   <section class="section__contact">
     <form class="form" action="index.html" method="post">
       <div class="div__contact">
@@ -351,23 +433,31 @@
   </section>
 </div>
 
+<!-- footer -->
   <footer class="footer">
+
+      <!-- normandiewebschool / page admin / crédits intro -->
       <div class="footer__list">
         Tom Lemelle
         <a href="https://normandiewebschool.fr">&copy; Normandie Web School</a>
         <a href="tomlem.github.io/admin.php">| Admin</a>
         <a href="creditsrgpd.html">| Crédits</a>
       </div>
+      <!-- fin normandiewebschool / page admin / crédits intro -->
 
+    <!-- réseaux sociaux icons -->
     <div class="icon__reseauxsociaux">
       <a href="https://www.youtube.com/channel/UCOacMpLJMQruPb5CT6ME7fQ?view_as=subscriber"><i class="fa fa-youtube"></i></a>
       <a href="https://www.linkedin.com/in/tom-lemelle/?originalSubdomain=fr"><i class="fa fa-linkedin"></i></a>
     </div>
+    <!-- finn réseaux sociaux icons -->
   </footer>
 
 </main>
 
+<!-- script js pour le slider automatique de la section compétences -->
 <script src="js/js.js" charset="utf-8"></script>
+<!-- fin script js pour le slider automatique de la section compétences -->
 
 </body>
 </html>
