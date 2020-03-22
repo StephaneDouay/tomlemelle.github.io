@@ -29,7 +29,7 @@ body{
   align-items: center;
 }
 
-.nav > a{
+.nav > a{li
   color: black;
   text-decoration: none;
   font-weight: 600;
@@ -38,7 +38,7 @@ body{
 }
 
 .liens_top{
-  transform: transition 1s;
+  transition: transform 1s;
 }
 
 .liens_top:hover{
@@ -195,7 +195,7 @@ body{
 }
 
 @media (min-width: 1400px){
-  .div__credits, .div__RGPD, .credits__button, .section,{
+  .div__credits, .div__RGPD, .credits__button, .section{
     margin-left: 227px;
     margin-right: 227px;
   }
@@ -211,7 +211,7 @@ body{
 }
 
 
-.texte__rgpd strong{}
+.texte__rgpd strong{
   color: #159DA4;
 }
 
