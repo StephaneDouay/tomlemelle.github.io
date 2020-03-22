@@ -4,7 +4,8 @@
 }
 
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-display: swap;
 }
 
 .logo_box, .logo{
