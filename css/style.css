@@ -19,9 +19,6 @@ body{
 
 /* MENU */
 
-.header{
-}
-
 .nav{
   height: 45px;
   display: flex;
@@ -156,58 +153,12 @@ body{
   line-height: 1.4;
 }
 
-.description, .titre__credits, .titre_RGPD{
+.description{
   color: #159da4;
   font-weight: normal;
   font-size: 16px;
 }
 
-.div__credits, .div__RGPD{
-  margin-left: 9.5%;
-  margin-right: 9.5%;
-}
-
-.titre_RGPD{
-  font-size: 25px;
-  color: black;
-}
-
-.texte__rgpd{
-  color: #159DA4;
-}
-
-
-.texte__rgpd strong{
-  color: #159DA4;
-}
-
-
-.credits__button{
-  margin-top: -25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn{
-  border: none;
-  background-color: #159DA4;
-  padding: 7px 10px;
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
-  transition: all ease 500ms;
-
-}
-
-.btn:hover{
-  background: #98A9AA;
-  margin-left: 15px;
-  font-size: 20px;
-  border: none;
-  transform: scale(1.2);
-
-}
 
 /* fin */
 
@@ -224,9 +175,6 @@ body{
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 40px;
-}
-
-.photo{
 }
 
 .bio{
@@ -251,11 +199,6 @@ body{
 .metiers{
   margin-top: 40px;
 }
-
-
-.metiers_video{
-}
-
 
 .video{
   display: flex;
@@ -763,3 +706,62 @@ textarea{
 }
 
 /* fin */
+
+/* credits & rgpd button */
+
+.titre__credits, .titre_RGPD{
+ color: #159da4;
+ font-weight: normal;
+ font-size: 16px;
+}
+
+.div__credits, .div__RGPD{
+  margin-left: 9.5%;
+  margin-right: 9.5%;
+}
+
+.titre_RGPD{
+  font-size: 25px;
+  color: black;
+}
+
+.texte__rgpd{
+  color: #159DA4;
+}
+
+
+.texte__rgpd strong{
+  color: #159DA4;
+}
+
+
+.credits__button{
+  margin-top: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  border: none;
+  background-color: #159DA4;
+  padding: 7px 10px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all ease 500ms;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.btn:hover{
+  background: #98A9AA;
+  margin-left: 15px;
+  font-size: 20px;
+  border: none;
+  transform: scale(1.2);
+
+}
+
+/* fin credits & rgpd button */
