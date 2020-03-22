@@ -2,9 +2,9 @@ var i = 0;
 var images = [];
 var time = 4000;
 
-images[0] = 'img/ppae.png';
-images[1] = 'img/developpement.png';
-images[2] = 'img/pslr.png';
+images[0] = 'img/ppae.PNG';
+images[1] = 'img/developpement.PNG';
+images[2] = 'img/pslr.PNG';
 
 function changeImg(){
   document.slide.src = images[i];
